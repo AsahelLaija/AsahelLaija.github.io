@@ -1,124 +1,37 @@
 /* esto es necesario para que sea compatible con cualquier navegador y dispositivo */
+
+/*root hace referencia a nuestro HTML */
+:root {
+  --primary-color: #003476;
+  --secondary-color: #b4d2f7; 
+  --header-size: 4rem;
+  --font: 1.8rem}
+
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   }
-main{
-      font-size: 2.0rem;
-}
 html{
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-body{
-  width: 100%;
-}
-
-/* header */
 header{
-  height: 50px;
-  background-color: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  height: 15vw;
+  background-color: var(--primary-color);
 }
-
-.search--input{
-  position: relative;
-  height: 22px;
-  padding: 0;
+main{
+  width: 100vw;
+  height: 70vh;
+  font-size: var(--font);
+  font-family: 'Roboto', sans-serif;
 }
-.search--button{
-  padding: 0;
+h1{
+  font-size: var(--header-size);
+  background-color: var(--primary-color);
 }
-.search--icon{
-  height: 15px;
-  width: 15px;
-}
-
-/* main */
-
-.main--worldtrending{
-  background-color: cornflowerblue;
-  height: 25.0rem;
-  width: 50.0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
-}
-.main--recent{
-  display: flex;
-}
-.main__recent--playlist{
-  width: 50vw;
-}
-.main__recent--playlist div div{
-  display: flex;
-  height: 30px;
-  justify-content: center;
-}
-.main__recent--song{
-  width: 50vw;
-}
-.main__recent--song div div{
-  display: flex;
-  height: 30px;
-  justify-content: center;
-}
-.main--foryou{
-  display: flex;
-}
-.main__foryou--playlist{
-  width: 50vw;
-}
-.main__foryou--playlist div div{
-  height: 180px;
-  width: 100px;
-  display: flex;
-  align-items: center;
-}
-.main__foryou--songs{
-  width: 50vw;
-}
-.main__foryou--songs div div{
-  display: flex;
-  height: 30px;
-  justify-content: center;
-}
-.scrollmenu {
-  background-color: #333;
-  overflow: auto;
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.scrollmenu div {
-  position: relative;
-  border: 1px dotted #000;
-  background-color: #eee;
-  height: 80px;
-  padding: 20px;
-  color: #000;
-}
-.scrollmenu div:hover {
-  background-color: #777;
-}
-
-.verticalScroll{
-  overflow-y: auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 180px;
-}
-.verticalScroll div{
-  position: relative;
-  border: 1px dotted #000;
-  background-color: #eee;
-  color: #000;
-}
-.verticalScroll div:hover{
-  background-color: #777;
+footer{
+  width: 100vw;
+  height: 15vh;
+  background-color: var(--secondary-color);
 }
