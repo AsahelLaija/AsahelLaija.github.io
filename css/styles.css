@@ -1,37 +1,87 @@
-/* esto es necesario para que sea compatible con cualquier navegador y dispositivo */
-
-/*root hace referencia a nuestro HTML */
-:root {
-  --primary-color: #003476;
-  --secondary-color: #b4d2f7; 
-  --header-size: 4rem;
-  --font: 1.8rem}
-
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   }
 html{
+  /* esto es importante: 
+  font-size: 62.5%;
+  para usar fuentes con rem
+  */
   font-size: 62.5%;
 }
-header{
-  width: 100vw;
-  height: 15vw;
-  background-color: var(--primary-color);
+.container{
+  display: flex;
+  flex-wrap: wrap;
 }
-main{
-  width: 100vw;
-  height: 70vh;
-  font-size: var(--font);
-  font-family: 'Roboto', sans-serif;
+
+.c1, 
+.c2, 
+.c3, 
+.c4, 
+.c5,
+.c6,
+.c7,
+.c8,
+.c9 {
+  width: 100%;
+  min-width: 150px;
+  height: 150px;
 }
-h1{
-  font-size: var(--header-size);
-  background-color: var(--primary-color);
+
+.c1{
+  background-color: #003476; 
 }
-footer{
-  width: 100vw;
-  height: 15vh;
-  background-color: var(--secondary-color);
+.c2{
+  background-color: #0062d2;
 }
+.c3{
+  background-color: #b4d2f7;
+}
+.c4{
+  background-color: #d5dfef;
+}
+.c5{
+  background-color: #dfe1e5;
+}
+.c6{
+  background-color: #94e8f6;
+}
+.c7{
+  background-color: #47d2eb;
+}
+.c8{
+  background-color: #3492eb;
+}
+.c9{
+  background-color: #1cc88f;
+}
+/* cuando la pantalla sea mas chica que 600px se ejecuta el codigo dentro de las llaves */
+/* @media (min-width: 600px){
+  .c2, 
+  .c3, 
+  .c4{
+    width: 50%;
+  }
+} */
+
+/* @media (min-width: 800px){
+  .container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .c1 {
+    width: 60%;
+  }
+  .c2 {
+    width: 40%;
+  }
+  .c3, 
+  .c4 {
+    width: 33%;
+  }
+  .c5{
+    width: 34%;
+  }
+} */
